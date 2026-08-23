@@ -71,7 +71,15 @@
   <body>
     <!-- ================= HERO CON VIDEO — BETA EXCLUSIVA ================= -->
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="assets/images/hero-poster.jpg"
+        onerror="document.querySelector('.hero').classList.add('video-failed')"
+      >
         <source src="assets/videos/hero-loop.webm" type="video/webm" />
         <source src="assets/videos/hero-loop.mp4" type="video/mp4" />
       </video>
@@ -415,7 +423,7 @@
       <div class="wrap">
         <div class="sec-head">
           <div class="kicker center">Postulación · 2 minutos</div>
-          <h2>Postúlate a la Beta</h2>
+          <h2>Postúlate a la cohorte Beta</h2>
           <p>Solo 20 cupos. Tus respuestas nos ayudan a calificar tu postulación y a priorizar qué construir primero para tu gimnasio.</p>
         </div>
 
@@ -561,15 +569,18 @@
                 <svg class="icon-svg" style="font-size: 14px; flex-shrink: 0; margin-top: 1px" viewBox="0 0 24 24">
                   <rect x="5" y="2" width="14" height="20" rx="2" />
                   <line x1="12" y1="18" x2="12.01" y2="18" /></svg
-                ><span>Si dejas tu WhatsApp o correo, lo usaremos para invitarte a la Beta cuando este lista.</span>
+                ><span>Si dejas tu WhatsApp, es el canal que usaremos para invitarte a la Beta si tu gimnasio califica.</span>
               </div>
               <textarea name="q_comentario" rows="2" placeholder="¿Algo más que quieras contarnos? (opcional)" style="margin-top: 14px"></textarea>
 
               <label class="consent">
                 <input type="checkbox" id="consent" />
                 <span
-                  >Autorizo el tratamiento de mis datos personales conforme a la <a href="#">Ley 1581 de 2012</a> de Colombia, únicamente para fines
-                  de contacto sobre GymBro. (Solo aplica si dejaste tus datos)</span
+                  >Autorizo el tratamiento de mis datos personales conforme a la
+                  <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=49981" target="_blank" rel="noopener"
+                    >Ley 1581 de 2012</a
+                  >
+                  de Colombia, únicamente para fines de contacto sobre GymBro. (Solo aplica si dejaste tus datos)</span
                 >
               </label>
 
@@ -597,7 +608,7 @@
       </div>
     </section>
 
-    <footer>GymBro OS · Postulación Beta · 2026</footer>
+    <footer>GymBro OS · Postulación Beta — Cohorte de 20 gimnasios · 2026</footer>
 
     <!-- ================= BOTÓN FLOTANTE DE WHATSAPP ================= -->
     <a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">

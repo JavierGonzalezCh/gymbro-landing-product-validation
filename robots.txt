@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gymbro-landing-product-validation.vercel.app/sitemap.xml

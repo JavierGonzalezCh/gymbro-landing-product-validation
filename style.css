@@ -124,6 +124,14 @@ h4 {
   z-index: 0;
   opacity: 0.32;
 }
+/* Si el video falla por completo (cualquier tamaño de pantalla, no solo mobile),
+   caemos al poster estático en vez de dejar el hero sin ningún fondo visual */
+.hero.video-failed .hero-video {
+  display: none;
+}
+.hero.video-failed .hero-poster-mobile {
+  display: block;
+}
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -1227,5 +1235,5 @@ footer {
   }
   .wa-float-tooltip {
     display: none;
-  } /* en mobile no hay hover, evitamos que quede pegado el tooltip */
+  }
 }

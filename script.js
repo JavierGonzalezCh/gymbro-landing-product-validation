@@ -61,7 +61,7 @@
 
 // ====== CONFIGURACIÓN ======
 const WHATSAPP_NUMBER = "573013460118";
-const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzeRg65ag9MZXYJYk427d05pDzid5iOi75iS7W-nsXtmI7pqIwZMmdisflbtAqfrLWFzw/exec";
+const WEBHOOK_URL = ""; // 👉 pega aquí la URL /exec que te dio Google Apps Script
 
 // ====== BOTÓN FLOTANTE DE WHATSAPP ======
 (function () {
@@ -107,6 +107,16 @@ document.getElementById("surveyForm").addEventListener("click", function (e) {
         return;
       }
     }
+    // Validación Van Westendorp: el precio "caro" debe ser mayor al precio
+    // "justo" — si están al revés, el dato queda inútil para el análisis.
+    if (flow[current] === "2b") {
+      const precioJusto = parseFloat(activeStep.querySelector('input[name="q_precio_justo"]').value);
+      const precioCaro = parseFloat(activeStep.querySelector('input[name="q_precio_caro"]').value);
+      if (!isNaN(precioJusto) && !isNaN(precioCaro) && precioCaro <= precioJusto) {
+        alert('El precio "caro" debería ser mayor que el precio "justo". Revisa los dos valores antes de continuar.');
+        return;
+      }
+    }
     // Al salir del paso 1, decidimos la rama del paso 2 según si usa software
     if (flow[current] === "1") {
       const usaSoftware = activeStep.querySelector('input[name="q_usa_software"]:checked');
@@ -121,6 +131,21 @@ document.getElementById("surveyForm").addEventListener("click", function (e) {
   }
 });
 renderProgress();
+
+// ====== EVITAR ENVÍO PREMATURO CON ENTER ======
+// Si el usuario presiona Enter dentro de un input mientras está en un paso
+// que no es el último, en vez de enviar el formulario incompleto avanzamos
+// al siguiente paso (mismo comportamiento y validaciones que el botón).
+document.getElementById("surveyForm").addEventListener("keydown", function (e) {
+  if (e.key !== "Enter") return;
+  if (e.target.tagName === "TEXTAREA") return; // permite salto de línea normal
+  const activeStep = stepsByKey[flow[current]];
+  if (!activeStep) return;
+  if (flow[current] === "4") return; // en el último paso, Enter sí puede enviar
+  e.preventDefault();
+  const nextBtn = activeStep.querySelector("[data-next]");
+  if (nextBtn) nextBtn.click();
+});
 
 // Mostrar/ocultar campo de texto cuando se marca "Otro" en dolor principal
 const dolorOtroCheck = document.getElementById("dolorOtroCheck");
