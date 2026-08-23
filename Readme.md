@@ -50,9 +50,29 @@ El cambio entre una y otra es automático (JavaScript detecta el ancho de pantal
 
 ## Ícono de pestaña (favicon) y SEO
 
-- `assets/images/favicon.svg` — ícono principal, se ve nítido en cualquier tamaño (navegadores modernos).
-- `assets/images/favicon-32.png` y `favicon-16.png` — fallback para navegadores que no soportan favicon SVG.
-- `assets/images/apple-touch-icon.png` (180×180) — ícono que usa iOS al agregar la página a la pantalla de inicio.
-- `assets/images/og-image.png` (1200×630) — imagen que aparece al compartir el link en WhatsApp, Facebook, LinkedIn o X.
+Los archivos del favicon viven en la **raíz del proyecto** (junto a `index.html`), no en `assets/`. Es intencional: navegadores y crawlers viejos piden automáticamente `/favicon.ico` y `/apple-touch-icon.png` desde la raíz del dominio sin fijarse en el `<head>`, así que deben estar ahí para cubrir ese caso.
+
+```
+gymbro-landing/
+├── index.html
+├── style.css
+├── script.js
+├── favicon.ico              → ícono clásico, fallback universal
+├── favicon.svg               → ícono nítido en cualquier resolución (navegadores modernos)
+├── favicon-96x96.png         → fallback PNG
+├── apple-touch-icon.png      → ícono al agregar a pantalla de inicio en iOS (180×180)
+├── web-app-manifest-192x192.png
+├── web-app-manifest-512x512.png
+├── site.webmanifest          → metadata de "app" (nombre, colores, íconos) para Android/PWA
+└── assets/
+    └── images/
+        ├── og-image.png       → vista previa al compartir el link (WhatsApp, Facebook, etc.)
+        └── og-image.svg
+```
+
+**Importante — rutas relativas:** todos los `<link>` de favicon en `index.html` usan rutas **relativas** (`href="favicon.ico"`, sin `/` al inicio). Si en algún momento regeneras el set con RealFaviconGenerator u otra herramienta, revisa que el código que te dé no use rutas absolutas (`href="/favicon.ico"`) — esas fallan al abrir el archivo localmente con doble clic (protocolo `file://`), porque el `/` apunta a la raíz del disco, no a la carpeta del proyecto. Mismo cuidado aplica a `site.webmanifest`: sus `icons.src` también deben ser relativos (`"web-app-manifest-192x192.png"`, no `"/web-app-manifest-192x192.png"`).
+
 - El `<head>` de `index.html` incluye meta description, Open Graph, Twitter Card, `theme-color`, `canonical` y datos estructurados (JSON-LD tipo `SoftwareApplication`) para mejorar cómo los buscadores y redes sociales interpretan la página.
 - Puedes probar cómo se ve el link compartido (antes de tener el dominio real) con herramientas como [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) o [Twitter Card Validator](https://cards-dev.twitter.com/validator) una vez esté publicada.
+- Si el favicon no aparece al probar en el navegador, primero prueba en **ventana de incógnito** — los favicons se cachean muy agresivamente y a veces un refresh normal no basta.
+

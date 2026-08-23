@@ -61,7 +61,7 @@
 
 // ====== CONFIGURACIÓN ======
 const WHATSAPP_NUMBER = "573013460118";
-const WEBHOOK_URL = ""; // 👉 pega aquí la URL /exec que te dio Google Apps Script
+const WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbzeRg65ag9MZXYJYk427d05pDzid5iOi75iS7W-nsXtmI7pqIwZMmdisflbtAqfrLWFzw/exec";
 
 // ====== BOTÓN FLOTANTE DE WHATSAPP ======
 (function () {
