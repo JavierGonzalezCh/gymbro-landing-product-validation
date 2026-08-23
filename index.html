@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymBro OS — Acceso Anticipado a la Beta | Software para Gimnasios en Colombia</title>
+
+    <!-- ===== SEO básico ===== -->
+    <meta
+      name="description"
+      content="GymBro OS es el software de gestión para gimnasios independientes en Colombia: cobros, asistencia, rutinas y una app con tu identidad para tus clientes. Postúlate a la Beta cerrada — solo 20 cupos."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0F0E0D" />
+    <!-- 👉 reemplaza por el dominio final una vez esté definido el nombre -->
+    <link rel="canonical" href="https://gymbro.co/" />
+
+    <!-- ===== Favicons ===== -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
+
+    <!-- ===== Open Graph (WhatsApp, Facebook, LinkedIn) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="GymBro OS" />
+    <meta property="og:title" content="GymBro OS — Acceso Anticipado a la Beta" />
+    <meta
+      property="og:description"
+      content="El sistema operativo para gimnasios independientes en Colombia. Cobros, asistencia, rutinas y app con tu identidad. Solo 20 cupos en la cohorte Beta."
+    />
+    <!-- 👉 reemplaza por el dominio final una vez esté definido el nombre -->
+    <meta property="og:url" content="https://gymbro.co/" />
+    <meta property="og:image" content="https://gymbro.co/assets/images/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- ===== Twitter / X Card ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GymBro OS — Acceso Anticipado a la Beta" />
+    <meta name="twitter:description" content="El sistema operativo para gimnasios independientes en Colombia. Solo 20 cupos en la cohorte Beta." />
+    <meta name="twitter:image" content="https://gymbro.co/assets/images/og-image.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ===== Datos estructurados (ayuda a Google a entender la página) ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "GymBro OS",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "Software de gestión para gimnasios independientes en Colombia: cobros, asistencia, rutinas y app con identidad propia para los clientes del gimnasio.",
+        "url": "https://gymbro.co/",
+        "image": "https://gymbro.co/assets/images/og-image.png",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/PreOrder",
+          "priceCurrency": "COP"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= HERO CON VIDEO — BETA EXCLUSIVA ================= -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+        <source src="assets/videos/hero-loop.webm" type="video/webm" />
+        <source src="assets/videos/hero-loop.mp4" type="video/mp4" />
+      </video>
+      <img class="hero-poster-mobile" src="assets/images/hero-poster.jpg" alt="" onerror="this.style.display = 'none'" />
+      <div class="hero-overlay"></div>
+      <div class="wrap hero-inner">
+        <div class="kicker center">Acceso anticipado · 20 cupos para gimnasios independientes</div>
+        <h1>El sistema operativo para tu gimnasio<br /><span class="r">antes que nadie más lo tenga</span></h1>
+        <p>
+          Cobros, asistencia, rutinas y una app con tu identidad para tus clientes — GymBro OS se está construyendo junto a los primeros 20 gimnasios
+          independientes de Colombia. Postúlate para asegurar tu cupo.
+        </p>
+        <div class="hero-cta">
+          <a href="#postulacion" class="btn btn-primary">Postular mi gimnasio a la Beta</a>
+          <a href="#funciones" class="btn btn-ghost">Ver qué incluye</a>
+        </div>
+        <div class="badge-row">
+          <div class="badge-pill"><span class="dot"></span>20 cupos disponibles</div>
+          <div class="badge-pill">Migración de datos <span>100% gratuita</span></div>
+          <div class="badge-pill">Soporte <span>directo con el fundador</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DOLORES — PANEL OPERATIVO ================= -->
+    <section class="pain-section">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="kicker">El problema hoy</div>
+          <h2>¿Te suena familiar?</h2>
+          <p>Así administra su día a día la mayoría de gimnasios independientes en Colombia.</p>
+        </div>
+        <div class="pain-grid">
+          <div class="pain-card hover-red">
+            <div class="pain-top">
+              <div class="pain-icon-box">
+                <svg class="icon-svg" style="font-size: 19px" viewBox="0 0 24 24">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
+                  <polyline points="16 7 22 7 22 13" />
+                </svg>
+              </div>
+              <div class="pain-alert"><span class="pain-dot"></span>Sin control</div>
+            </div>
+            <div class="pain-title">Fuga de cobros</div>
+            <p class="pain-desc">Controlas los pagos en Excel o cuaderno y pierdes el rastro de quién debe la mensualidad.</p>
+          </div>
+
+          <div class="pain-card hover-cyan">
+            <div class="pain-top">
+              <div class="pain-icon-box">
+                <svg class="icon-svg" style="font-size: 19px" viewBox="0 0 24 24">
+                  <line x1="1" y1="1" x2="23" y2="23" />
+                  <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55" />
+                  <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39" />
+                  <path d="M10.71 5.05A16 16 0 0 1 22.58 9" />
+                  <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88" />
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                  <line x1="12" y1="20" x2="12.01" y2="20" />
+                </svg>
+              </div>
+              <div class="pain-alert"><span class="pain-dot"></span>Sin visibilidad</div>
+            </div>
+            <div class="pain-title">Desconexión en rutinas</div>
+            <p class="pain-desc">Mandas las rutinas por WhatsApp o PDF y no sabes si el cliente realmente las sigue.</p>
+          </div>
+
+          <div class="pain-card hover-red">
+            <div class="pain-top">
+              <div class="pain-icon-box">
+                <svg class="icon-svg" style="font-size: 19px" viewBox="0 0 24 24">
+                  <path
+                    d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"
+                  />
+                  <line x1="1" y1="1" x2="23" y2="23" />
+                </svg>
+              </div>
+              <div class="pain-alert"><span class="pain-dot"></span>Sin alertas</div>
+            </div>
+            <div class="pain-title">Ceguera de deserción</div>
+            <p class="pain-desc">No tienes forma fácil de saber cuántos clientes se te están yendo cada mes.</p>
+          </div>
+
+          <div class="pain-card hover-cyan">
+            <div class="pain-top">
+              <div class="pain-icon-box">
+                <svg class="icon-svg" style="font-size: 19px" viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                  />
+                  <line x1="12" y1="8" x2="12" y2="12" />
+                  <line x1="12" y1="16" x2="12.01" y2="16" />
+                </svg>
+              </div>
+              <div class="pain-alert"><span class="pain-dot"></span>Sin canal</div>
+            </div>
+            <div class="pain-title">Caos en la comunicación</div>
+            <p class="pain-desc">Te comunicas con tus clientes por WhatsApp o correos que nadie lee, y los avisos importantes se pierden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FUNCIONES (fondo dinámico a toda la sección) ================= -->
+    <section class="features" id="funciones">
+      <div class="fe-bg-slot">
+        <img
+          id="feImage"
+          class="fe-bg-img"
+          src="assets/images/mockup-miembros-desktop.jpg"
+          data-img-desktop="assets/images/mockup-miembros-desktop.jpg"
+          data-img-mobile="assets/images/mockup-miembros-mobile.jpg"
+          alt="Vista previa de la función seleccionada"
+          onerror="
+            this.style.opacity = '0';
+            document.getElementById('feFallback').style.display = 'flex';
+          "
+        />
+        <div class="fe-bg-fallback" id="feFallback">
+          <svg class="icon-svg" style="font-size: 32px" viewBox="0 0 24 24">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <circle cx="8.5" cy="8.5" r="1.5" />
+            <polyline points="21 15 16 10 5 21" /></svg
+          ><span class="t" id="feFallbackText">Vista previa — Panel de miembros</span>
+        </div>
+      </div>
+      <div class="fe-scrim"></div>
+
+      <div class="fe-content">
+        <div class="wrap fe-header-wrap">
+          <div class="sec-head">
+            <div class="kicker center">Cómo se ve cada función</div>
+            <h2>Todo tu negocio<br />en un solo panel</h2>
+            <p>
+              Este es el producto que estamos afinando en la Beta cerrada junto a los primeros 20 gimnasios — tu feedback ayuda a definir la versión
+              final.
+            </p>
+          </div>
+          <div class="illustrative-note">
+            <svg class="icon-svg" style="font-size: 12px; vertical-align: -2px; margin-right: 4px" viewBox="0 0 24 24">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" /></svg
+            ><span>Vista previa del producto</span> — el diseño puede evolucionar durante la Beta
+          </div>
+        </div>
+
+        <!-- Explorador interactivo de funciones -->
+        <!-- fe-explorer-row: en escritorio deja 1/3 izquierdo libre (fe-spacer) para que se vea
+             el mockup del fondo; en mobile el spacer desaparece y las tarjetas ocupan todo el ancho -->
+        <div class="fe-explorer-row">
+          <div class="fe-spacer" aria-hidden="true"></div>
+          <div class="fe-tabs" id="feTabs">
+            <div
+              class="fe-tab active"
+              data-img-desktop="assets/images/mockup-miembros-desktop.jpg"
+              data-img-mobile="assets/images/mockup-miembros-mobile.jpg"
+              data-label="Panel de miembros"
+            >
+              <div class="fe-tab-num">01.</div>
+              <div class="fe-tab-label">Miembros</div>
+              <div class="fe-tab-content">
+                <div class="fe-kicker">Para el dueño</div>
+                <h4>Gestión de miembros</h4>
+                <p>Ficha completa de cada cliente, sin planillas sueltas ni datos regados entre WhatsApp y Excel.</p>
+                <ul class="feat-list">
+                  <li>Perfil, plan y estado de cada miembro</li>
+                  <li>Historial de asistencia y pagos en un solo lugar</li>
+                  <li>Notas y seguimiento personalizado</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="fe-tab"
+              data-img-desktop="assets/images/mockup-rutinas-desktop.jpg"
+              data-img-mobile="assets/images/mockup-rutinas-mobile.jpg"
+              data-label="App de rutinas"
+            >
+              <div class="fe-tab-num">02.</div>
+              <div class="fe-tab-label">Rutinas</div>
+              <div class="fe-tab-content">
+                <div class="fe-kicker">Para el cliente</div>
+                <h4>Rutinas asignadas</h4>
+                <p>Arma y asigna rutinas que tus clientes ven desde su celular, sin PDFs perdidos ni mensajes de WhatsApp.</p>
+                <ul class="feat-list">
+                  <li>Biblioteca de ejercicios reutilizable</li>
+                  <li>Asignación individual o por grupo</li>
+                  <li>Seguimiento de si la están cumpliendo</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="fe-tab"
+              data-img-desktop="assets/images/mockup-reportes-desktop.jpg"
+              data-img-mobile="assets/images/mockup-reportes-mobile.jpg"
+              data-label="Dashboard de reportes"
+            >
+              <div class="fe-tab-num">03.</div>
+              <div class="fe-tab-label">Reportes</div>
+              <div class="fe-tab-content">
+                <div class="fe-kicker">Para el dueño</div>
+                <h4>Reportes del negocio</h4>
+                <p>Números claros para tomar decisiones, no solo intuición sobre qué tan lleno está el gimnasio.</p>
+                <ul class="feat-list">
+                  <li>Ingresos y proyección mensual</li>
+                  <li>Clientes nuevos vs. deserción</li>
+                  <li>Sedes comparadas (si tienes más de una)</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="fe-tab"
+              data-img-desktop="assets/images/mockup-comunicacion-desktop.jpg"
+              data-img-mobile="assets/images/mockup-comunicacion-mobile.jpg"
+              data-label="Muro de comunicaciones"
+            >
+              <div class="fe-tab-num">04.</div>
+              <div class="fe-tab-label">Muro</div>
+              <div class="fe-tab-content">
+                <div class="fe-kicker">Para el dueño y el cliente</div>
+                <h4>Muro de comunicaciones</h4>
+                <p>Un canal directo dentro de la app para avisar cierres, promos o novedades — sin depender de que lean el WhatsApp.</p>
+                <ul class="feat-list">
+                  <li>Anuncios que llegan a todos tus miembros</li>
+                  <li>Notificaciones push automáticas</li>
+                  <li>Historial de comunicados dentro de la app</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="fe-tab"
+              data-img-desktop="assets/images/mockup-logros-desktop.jpg"
+              data-img-mobile="assets/images/mockup-logros-mobile.jpg"
+              data-label="Logros y rachas"
+            >
+              <div class="fe-tab-num">05.</div>
+              <div class="fe-tab-label">Rachas</div>
+              <div class="fe-tab-content">
+                <div class="fe-kicker">Para el cliente</div>
+                <h4>Logros y rachas</h4>
+                <p>
+                  Cada visita suma a una racha y cada meta cumplida desbloquea una insignia — el mismo gancho de las apps de hábitos, aplicado a tu
+                  gimnasio.
+                </p>
+                <ul class="feat-list">
+                  <li>Racha de asistencia visible en la app</li>
+                  <li>Insignias por metas y constancia</li>
+                  <li>Motiva a que no falten sin que tú hagas nada</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OTRAS FUNCIONES ================= -->
+    <section class="other-section">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="kicker center">Y más funciones incluidas</div>
+          <h2>El resto del alcance</h2>
+        </div>
+        <div class="other-grid">
+          <div class="other-card glass-card">
+            <div class="other-icon">
+              <svg class="icon-svg" style="font-size: 14px" viewBox="0 0 24 24">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <line x1="2" y1="10" x2="22" y2="10" />
+              </svg>
+            </div>
+            <div class="other-title">Pagos y mensualidades</div>
+            <p class="other-desc">Control de quién pagó, quién debe y recordatorios automáticos.</p>
+          </div>
+          <div class="other-card glass-card">
+            <div class="other-icon">
+              <svg class="icon-svg" style="font-size: 14px" viewBox="0 0 24 24">
+                <rect x="3" y="4" width="18" height="18" rx="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+            </div>
+            <div class="other-title">Clases grupales</div>
+            <p class="other-desc">Publica horarios y controla cupos sin hojas de inscripción.</p>
+          </div>
+          <div class="other-card glass-card">
+            <div class="other-icon">
+              <svg class="icon-svg" style="font-size: 14px" viewBox="0 0 24 24">
+                <polyline points="9 11 12 14 22 4" />
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+              </svg>
+            </div>
+            <div class="other-title">Asistencia con QR</div>
+            <p class="other-desc">Check-in rápido al entrar, sin firmar planilla en portería.</p>
+          </div>
+          <div class="other-card glass-card">
+            <div class="other-icon">
+              <svg class="icon-svg" style="font-size: 14px" viewBox="0 0 24 24">
+                <rect x="4" y="2" width="16" height="20" rx="1" />
+                <path d="M9 22v-4h6v4" />
+                <line x1="8" y1="7" x2="8" y2="7.01" />
+                <line x1="16" y1="7" x2="16" y2="7.01" />
+                <line x1="8" y1="11" x2="8" y2="11.01" />
+                <line x1="16" y1="11" x2="16" y2="11.01" />
+              </svg>
+            </div>
+            <div class="other-title">Multi-sede</div>
+            <p class="other-desc">Panel único, check-in cruzado y reportes consolidados entre sedes.</p>
+          </div>
+          <div class="other-card glass-card">
+            <div class="other-icon">
+              <svg class="icon-svg" style="font-size: 14px" viewBox="0 0 24 24">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                />
+              </svg>
+            </div>
+            <div class="other-title">Comunidad</div>
+            <p class="other-desc">Un feed donde tus miembros comparten logros, dan like y se animan entre ellos.</p>
+          </div>
+          <div class="other-card glass-card">
+            <div class="other-icon">
+              <svg class="icon-svg" style="font-size: 14px" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.6-.7 1.6-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.6-.4-1.1 0-.9.8-1.7 1.7-1.7h2C19.5 16.4 22 13.9 22 10.9 22 5.9 17.5 2 12 2z"
+                />
+                <circle cx="6.5" cy="11.5" r="1" />
+                <circle cx="9.5" cy="7.5" r="1" />
+                <circle cx="14.5" cy="7.5" r="1" />
+                <circle cx="17.5" cy="11.5" r="1" />
+              </svg>
+            </div>
+            <div class="other-title">Tu identidad, no la nuestra</div>
+            <p class="other-desc">App con tu logo y tus colores, sin "powered by" de terceros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POSTULACIÓN BETA (WIZARD) ================= -->
+    <section class="survey" id="postulacion">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="kicker center">Postulación · 2 minutos</div>
+          <h2>Postúlate a la cohorte Beta</h2>
+          <p>Solo 20 cupos. Tus respuestas nos ayudan a calificar tu postulación y a priorizar qué construir primero para tu gimnasio.</p>
+        </div>
+
+        <div class="survey-card glass-card">
+          <div class="progress-track" id="progressTrack"></div>
+
+          <form id="surveyForm">
+            <!-- PASO 1 -->
+            <div class="step active" data-step="1">
+              <div class="step-label">Paso 1 de 4 · Tu opinión</div>
+              <div class="q">
+                <label class="qtitle">¿Qué tan buena te parece esta idea para tu gimnasio?</label>
+                <div class="scale">
+                  <label><input type="radio" name="q_interes" value="1" required /><span>1</span></label>
+                  <label><input type="radio" name="q_interes" value="2" /><span>2</span></label>
+                  <label><input type="radio" name="q_interes" value="3" /><span>3</span></label>
+                  <label><input type="radio" name="q_interes" value="4" /><span>4</span></label>
+                  <label><input type="radio" name="q_interes" value="5" /><span>5</span></label>
+                </div>
+                <div class="scale-labels"><span>No me sirve</span><span>La necesito ya</span></div>
+              </div>
+              <div class="q" style="margin-bottom: 0">
+                <label class="qtitle">¿Actualmente usas algún software o app para administrar tu gimnasio?</label>
+                <div class="opt-grid">
+                  <label class="opt"><input type="radio" name="q_usa_software" value="si" required /><span>Sí, uso una app o software</span></label>
+                  <label class="opt"><input type="radio" name="q_usa_software" value="excel" /><span>Uso Excel / cuaderno</span></label>
+                  <label class="opt"><input type="radio" name="q_usa_software" value="whatsapp" /><span>Solo WhatsApp / manual</span></label>
+                  <label class="opt"><input type="radio" name="q_usa_software" value="no" /><span>No uso nada</span></label>
+                </div>
+              </div>
+              <div class="step-nav"><button type="button" class="btn btn-next" data-next>Siguiente</button></div>
+            </div>
+
+            <!-- PASO 2A (rama: ya usa software) -->
+            <div class="step" data-step="2a">
+              <div class="step-label">Paso 2 de 4 · Tu herramienta actual</div>
+              <div class="q">
+                <label class="qtitle">¿Cuál usas y cuánto pagas al mes por ella?</label>
+                <span class="qhint">Nos ayuda a calibrar la migración gratuita a tu caso.</span>
+                <div class="row2">
+                  <input type="text" name="q_cual_software" placeholder="Nombre del software" />
+                  <input type="text" name="q_cuanto_paga" placeholder="Ej: $80.000/mes" />
+                </div>
+              </div>
+              <div class="q" style="margin-bottom: 0">
+                <label class="qtitle">¿Qué tan satisfecho estás con ella?</label>
+                <div class="scale">
+                  <label><input type="radio" name="q_satisfaccion" value="1" /><span>1</span></label>
+                  <label><input type="radio" name="q_satisfaccion" value="2" /><span>2</span></label>
+                  <label><input type="radio" name="q_satisfaccion" value="3" /><span>3</span></label>
+                  <label><input type="radio" name="q_satisfaccion" value="4" /><span>4</span></label>
+                  <label><input type="radio" name="q_satisfaccion" value="5" /><span>5</span></label>
+                </div>
+                <div class="scale-labels"><span>Muy insatisfecho</span><span>Muy satisfecho</span></div>
+              </div>
+              <div class="step-nav">
+                <button type="button" class="btn btn-back" data-back>Atrás</button>
+                <button type="button" class="btn btn-next" data-next>Siguiente</button>
+              </div>
+            </div>
+
+            <!-- PASO 2B (rama: no usa nada / Excel / WhatsApp — Van Westendorp simplificado) -->
+            <div class="step" data-step="2b">
+              <div class="step-label">Paso 2 de 4 · ¿Cuánto pagarías?</div>
+              <div class="q">
+                <label class="qtitle">¿A qué precio mensual empezaría a parecerte justo — buen valor por lo que ofrece?</label>
+                <span class="qhint">Escribe solo el número, en pesos colombianos.</span>
+                <input type="number" name="q_precio_justo" inputmode="numeric" min="0" step="1000" placeholder="Ej: 60000" required />
+              </div>
+              <div class="q" style="margin-bottom: 0">
+                <label class="qtitle">¿Y a qué precio mensual ya te parecería caro, aunque lo pensarías?</label>
+                <span class="qhint">Escribe solo el número, en pesos colombianos.</span>
+                <input type="number" name="q_precio_caro" inputmode="numeric" min="0" step="1000" placeholder="Ej: 150000" required />
+              </div>
+              <div class="step-nav">
+                <button type="button" class="btn btn-back" data-back>Atrás</button>
+                <button type="button" class="btn btn-next" data-next>Siguiente</button>
+              </div>
+            </div>
+
+            <!-- PASO 3 -->
+            <div class="step" data-step="3">
+              <div class="step-label">Paso 3 de 4 · Tu gimnasio</div>
+              <div class="q">
+                <label class="qtitle">¿Cuál es tu mayor dolor de cabeza administrando el gimnasio hoy?</label>
+                <div class="opt-grid">
+                  <label class="opt"><input type="checkbox" name="q_dolor" value="cobros" /><span>Cobros y mensualidades</span></label>
+                  <label class="opt"><input type="checkbox" name="q_dolor" value="asistencia" /><span>Control de asistencia</span></label>
+                  <label class="opt"><input type="checkbox" name="q_dolor" value="rutinas" /><span>Enviar/seguir rutinas</span></label>
+                  <label class="opt"><input type="checkbox" name="q_dolor" value="desercion" /><span>Deserción de clientes</span></label>
+                  <label class="opt"><input type="checkbox" name="q_dolor" value="comunicacion" /><span>Comunicación con clientes</span></label>
+                  <label class="opt"><input type="checkbox" name="q_dolor" value="otro" id="dolorOtroCheck" /><span>Otro</span></label>
+                </div>
+                <input type="text" name="q_dolor_otro" id="dolorOtroInput" placeholder="¿Cuál?" style="margin-top: 10px; display: none" />
+              </div>
+              <div class="q">
+                <label class="qtitle">¿Cuántos miembros activos tiene tu gimnasio?</label>
+                <select name="q_tamano" required>
+                  <option value="">Selecciona un rango</option>
+                  <option value="menos_50">Menos de 50</option>
+                  <option value="50_150">50 – 150</option>
+                  <option value="150_300">150 – 300</option>
+                  <option value="mas_300">Más de 300</option>
+                </select>
+              </div>
+              <div class="q" style="margin-bottom: 0">
+                <label class="qtitle">Si GymBro resolviera esos dolores, ¿qué tan probable es que lo uses?</label>
+                <div class="scale">
+                  <label><input type="radio" name="q_probabilidad" value="1" required /><span>1</span></label>
+                  <label><input type="radio" name="q_probabilidad" value="2" /><span>2</span></label>
+                  <label><input type="radio" name="q_probabilidad" value="3" /><span>3</span></label>
+                  <label><input type="radio" name="q_probabilidad" value="4" /><span>4</span></label>
+                  <label><input type="radio" name="q_probabilidad" value="5" /><span>5</span></label>
+                </div>
+                <div class="scale-labels"><span>Nada probable</span><span>Muy probable</span></div>
+              </div>
+              <div class="step-nav">
+                <button type="button" class="btn btn-back" data-back>Atrás</button>
+                <button type="button" class="btn btn-next" data-next>Siguiente</button>
+              </div>
+            </div>
+
+            <!-- PASO 4 -->
+            <div class="step" data-step="4">
+              <div class="step-label">Paso 4 de 4 · ¿Quieres ser de los primeros?</div>
+              <div class="q">
+                <label
+                  class="qtitle"
+                  style="font-family: &quot;Inter&quot;, sans-serif; font-weight: 400; font-size: 14px; color: var(--silver); margin-bottom: 16px"
+                  >Si quieres ser parte de los 20 primeros usuarios de la Beta, deja tus datos y nos contactaremos contigo. Si prefieres no dejarlos,
+                  igual puedes enviar tus respuestas — nos ayudan muchísimo a entender el mercado.</label
+                >
+              </div>
+              <div class="row2" style="margin-bottom: 12px">
+                <input type="text" name="nombre" placeholder="Nombre (opcional)" />
+                <input type="text" name="gimnasio" placeholder="Nombre del gimnasio (opcional)" />
+              </div>
+              <div class="row2">
+                <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional, ej: 3001234567)" />
+                <input type="email" name="email" placeholder="Correo electrónico (opcional)" />
+              </div>
+              <div class="field-note">
+                <svg class="icon-svg" style="font-size: 14px; flex-shrink: 0; margin-top: 1px" viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" /></svg
+                ><span>Si dejas tu WhatsApp, es el canal que usaremos para invitarte a la Beta si tu gimnasio califica.</span>
+              </div>
+              <textarea name="q_comentario" rows="2" placeholder="¿Algo más que quieras contarnos? (opcional)" style="margin-top: 14px"></textarea>
+
+              <label class="consent">
+                <input type="checkbox" id="consent" />
+                <span
+                  >Autorizo el tratamiento de mis datos personales conforme a la <a href="#">Ley 1581 de 2012</a> de Colombia, únicamente para fines
+                  de contacto sobre GymBro. (Solo aplica si dejaste tus datos)</span
+                >
+              </label>
+
+              <div class="step-nav">
+                <button type="button" class="btn btn-back" data-back>Atrás</button>
+                <button type="submit" class="submit-btn" id="submitBtn" style="flex: 2">Enviar respuestas</button>
+              </div>
+            </div>
+          </form>
+
+          <div id="thankyou">
+            <h3 style="display: flex; align-items: center; justify-content: center; gap: 10px">
+              ¡Gracias<span id="tyName"></span>!<svg class="icon-svg" style="font-size: 22px; color: var(--ok)" viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </h3>
+            <p>
+              Ya guardamos tus respuestas — nos ayudan muchísimo a entender el mercado. Si quieres más información sobre GymBro o ser parte de los 20
+              primeros usuarios de la Beta, escríbenos por WhatsApp.
+            </p>
+            <a href="#" id="waBtn" class="wa-btn" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>GymBro OS · Postulación Beta — Cohorte de 20 gimnasios · 2026</footer>
+
+    <!-- ================= BOTÓN FLOTANTE DE WHATSAPP ================= -->
+    <a id="waFloat" class="wa-float" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+      <span class="wa-float-tooltip">¿Dudas? Escríbeme directo</span>
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.53 1.36 5.07L2.05 22l5.19-1.36a9.87 9.87 0 0 0 4.8 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.05h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.08.81.82-3-.19-.31a8.18 8.18 0 0 1-1.26-4.32c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.17 8.17 0 0 1 2.41 5.82c0 4.55-3.7 8.24-8.3 8.24zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.4-.12-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.36-.77-1.86-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"
+        />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
